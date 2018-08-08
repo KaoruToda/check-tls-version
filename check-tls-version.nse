@@ -1,5 +1,5 @@
 description = [[
-Check TLS version
+This script checks TLS version.
 ]]
  
 author = "Kaoru Toda";
@@ -36,6 +36,7 @@ local function try_connect(host, port, protocol)
 		sock:close()
 		return false
 	end
+	sock:close()
 	return true
 end
  
